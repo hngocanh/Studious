@@ -8,6 +8,7 @@
 
 html, body{
     font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
 }
 
 .heading h3{
@@ -15,4 +16,28 @@ html, body{
     line-height: 50px;
     font-weight: 600;
     position: relative;
+}
+
+
+/* Header */
+
+.header__top{
+    background-color: #0d369f;
+}
+
+.header__top-content a{
+    color: white;
+    text-decoration: none;
+    margin-right: 1.5rem;
+    font-weight: 500;
+    transition: all .5s;
+}
+
+.header__top-content i{
+    margin-right: 1rem;
+    color: white;
+}
+
+.header__top-content a:hover{
+    color: #ff6e65;
 }
