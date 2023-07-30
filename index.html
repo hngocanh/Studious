@@ -37,8 +37,8 @@
     <link rel="stylesheet" href="./CSS/style.css" />
   </head>
   <body>
-    <!-- Header -->
-    <header>
+    <!-- Top Header -->
+    <section class="header__top">
       <div class="header__top">
         <div
           class="header__top-content container-fluid d-flex align-items-center py-3"
@@ -50,68 +50,236 @@
           <a href="mailto:mail@example.com">mail@example.com</a>
         </div>
       </div>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Studious</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">HOME</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">ABOUT US</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  PAGES
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">BLOG POSTS</a></li>
-                  <li><a class="dropdown-item" href="#">404 PAGE</a></li>
-                  <li>
-                    <a class="dropdown-item" href="#">LANDING PAGE</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">ELEMENTS PAGE</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">CONTACT</a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <button class="btn btn-outline-success" type="submit">
-                Search
-              </button>
-            </form>
+    </section>
+    <!-- Header -->
+    <header id="web-header" class="header__main">
+      <div class="container-fluid">
+        <nav class="navbarStudious navbar navbar-expand-lg justify-content-end">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img src="./Img/logo.png" alt="logo" />
+              Studious</a
+            >
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >HOME</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">ABOUT US</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    PAGES
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">BLOG POSTS</a></li>
+                    <li><a class="dropdown-item" href="#">404 PAGE</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">LANDING PAGE</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">ELEMENTS PAGE</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">CONTACT</a>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <div class="search__input">
+                  <input
+                    class="form-control me-2"
+                    type="search"
+                    placeholder="Enter keyword"
+                    aria-label="Search"
+                  />
+                </div>
+                <div class="search__button">
+                  <button type="submit">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                  </button>
+                </div>
+              </form>
+              <div class="darkMode">
+                <nav class="navigation">
+                  <div class="theme-switch-wrapper">
+                    <label class="theme-switch" for="checkbox">
+                      <input type="checkbox" id="checkbox" />
+                      <div class="mode-container">
+                        <i class="fa-regular fa-sun"></i>
+                        <i class="fa-regular fa-moon"></i>
+                      </div>
+                    </label>
+                  </div>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Features -->
+    <section class="features section">
+      <div class="features__content">
+        <div class="container">
+          <div class="title__heading text-center mx-auto mb-5">
+            <h2 class="title__main">Welcom to <span>Studious</span></h2>
+          </div>
+          <div class="row text-center justify-content-center">
+            <div class="col-4">
+              <div class="features__item">
+                <div class="features__image">
+                  <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+                <div class="features__info">
+                  <a href="#">
+                    <h3>Trending Courses</h3>
+                  </a>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Explicabo aliquam omnis corporis cupiditate perferendis
+                    illo.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="features__item">
+                <div class="features__image">
+                  <i class="fa-solid fa-users"></i>
+                </div>
+                <div class="features__info">
+                  <a href="#">
+                    <h3>Certified Teachers</h3>
+                  </a>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Explicabo aliquam omnis corporis cupiditate perferendis
+                    illo.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="features__item">
+                <div class="features__image">
+                  <i class="fa-solid fa-book"></i>
+                </div>
+                <div class="features__info">
+                  <a href="#">
+                    <h3>Books & Library</h3>
+                  </a>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Explicabo aliquam omnis corporis cupiditate perferendis
+                    illo.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </nav>
-    </header>
+      </div>
+    </section>
+
+    <!-- Services -->
+
+    <section class="services section">
+      <div class="services__content container">
+        <div class="services__grid">
+          <div class="row">
+            <div class="col-4"></div>
+            <div class="col-8">
+              <div class="row">
+                <div class="col-6">
+                  <div class="services__info d-flex align-items-center">
+                    <div class="icon">
+                      <i class="fa-solid fa-hands-asl-interpreting"></i>
+                    </div>
+                    <div class="info">
+                      <h4>Flexible Classes</h4>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="services__info d-flex align-items-center">
+                    <div class="icon">
+                      <i class="fa-solid fa-download"></i>
+                    </div>
+                    <div class="info">
+                      <h4>Offline Mode</h4>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-6 mt-4">
+                  <div class="services__info d-flex align-items-center">
+                    <div class="icon">
+                      <i class="fa-solid fa-headphones-simple"></i>
+                    </div>
+                    <div class="info">
+                      <h4>Educator Help</h4>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 mt-4">
+                  <div class="services__info d-flex align-items-center">
+                    <div class="icon">
+                      <i class="fa-regular fa-circle-play"></i>
+                    </div>
+                    <div class="info">
+                      <h4>Online Classes</h4>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats -->
+
+    <div class="stats section">
+      <div class="title__heading"></div>
+      <div class="stats__content container"></div>
+    </div>
 
     <!-- jQuery -->
     <script

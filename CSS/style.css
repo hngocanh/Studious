@@ -11,11 +11,28 @@ html, body{
     font-size: 15px;
 }
 
-.heading h3{
+.title__heading h2{
     font-size: 40px;
     line-height: 50px;
     font-weight: 600;
     position: relative;
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 28px;
+    color: #707070;
+    letter-spacing: .4px;
+}
+
+.section{
+    padding: 5rem 0;
 }
 
 
@@ -40,4 +57,124 @@ html, body{
 
 .header__top-content a:hover{
     color: #ff6e65;
+}
+
+.header__main .navbar-brand {
+    font-size: 26px;
+    color: #0d369f;
+    font-weight: 600;
+}
+
+#navbarSupportedContent .navbar-nav .nav-item{
+    padding: 5px 10px;
+    transition: all .5s; 
+}
+
+#navbarSupportedContent .nav-item .nav-link{
+    font-size: 16px;
+    color: black;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+#navbarSupportedContent .nav-item .active{
+    color: #ff6e65;
+}
+
+#navbarSupportedContent .nav-item .nav-link:hover{
+    color: #ff6e65;
+}
+
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+    transform: translateX(-50px);
+    background: white;
+    border: 1px solid none;
+    box-shadow: rgb(12 12 12 / 6%) 0px 1px 20px 0px;
+}
+
+#navbarSupportedContent .dropdown-menu .dropdown-item{
+    font-size: 16px;
+    color: black;
+    font-weight: 600;
+    text-transform: uppercase;
+    background-color: white;
+}
+
+#navbarSupportedContent .dropdown-menu li{
+    transition: all .5s; 
+    /* padding: 0; */
+}
+
+#navbarSupportedContent .dropdown-menu .dropdown-item:hover{
+    color: #ff6e65;
+}
+
+/* Features */
+
+.features .title__main span{
+    color: #ff6e65;
+}
+
+/* .features .title__heading .title__main h3::before, .features .title__main h3::after {
+    content: " ";
+    background: grey;
+    width: 60px;
+    height: 2px;
+    position: absolute;
+    right: 0;
+    margin: 0 auto;
+} */
+
+
+.features .features__item .features__image{
+    margin-bottom: 30px;
+}
+
+.features .features__item .features__image i{
+    color: #0d369f;
+    font-size: 30px;
+    background-color: #00369f17;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    border-radius: 50%;
+}
+
+
+.features .features__item .features__info h3{
+    color: black;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+/* Services */
+
+.services{
+    background-image: url('../Img/bg3.jpg');
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.services__info{
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.services__info i{
+    font-size: 30px;
+    background-color: #00369f17;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    border-radius: 50%;
+    text-align: center;
+    margin-right: 1rem;
+    color: #0d369f;
+}
+
+.services__info h4{
+    font-weight: 600;
 }
