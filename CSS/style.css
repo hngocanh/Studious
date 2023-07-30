@@ -11,11 +11,16 @@ html, body{
     font-size: 15px;
 }
 
+
 .title__heading h2{
     font-size: 40px;
     line-height: 50px;
     font-weight: 600;
     position: relative;
+}
+
+.title__heading span{
+    color: #ff6e65;
 }
 
 a{
@@ -29,6 +34,7 @@ p{
     line-height: 28px;
     color: #707070;
     letter-spacing: .4px;
+    text-align: center;
 }
 
 .section{
@@ -111,10 +117,6 @@ p{
 
 /* Features */
 
-.features .title__main span{
-    color: #ff6e65;
-}
-
 /* .features .title__heading .title__main h3::before, .features .title__main h3::after {
     content: " ";
     background: grey;
@@ -177,4 +179,26 @@ p{
 
 .services__info h4{
     font-weight: 600;
+}
+
+/* Stats */
+
+.stats__main{
+    margin-top: 5rem;
+}
+
+.stats__main .col-3{
+    border-right: 1px solid rgba(128, 128, 128, 0.469);
+}
+
+.stats__main .counter{
+    font-size: 40px;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 1rem;
+}
+
+.stats__main .col-3 p:last-of-type{
+    color: black;
+    text-transform: uppercase;
 }
