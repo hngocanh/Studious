@@ -273,3 +273,156 @@ p{
     align-items: center;
     margin-top: 30px;
 }
+/* =============== WORLD =============== */
+.world{
+    margin-top: 160px;
+}
+.world .world__top h2{
+    text-align: center;
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 600;
+    position: relative;
+}
+.world .world__top span{
+    color: #ff6e65;
+}
+.world .world__top h2::before{
+    content: "";
+    background: #707070;
+    width: 60px;
+    height: 2px;
+    position: absolute;
+    right: 0;
+    margin: 0 auto;
+    left: -20px;
+    bottom: -8px;
+    display: block;
+}
+.world .world__top h2:after{
+    content: "";
+    background: #707070;
+    width: 60px;
+    height: 2px;
+    position: absolute;
+    right: 0;
+    margin: 0 auto;
+    left: 20px;
+    bottom: -15px;
+}.world .world__bottom{
+    margin-top: 80px;
+}
+.world .world__bottom .row{
+    margin-left: 11px;
+}
+.world .world__bottom .col{
+    padding: 0;
+}
+.world .world__item{
+    box-shadow: 0 20px 62px rgba(4, 20, 69, 0.1);
+    padding: 10px;
+    background: #fff;
+    border-radius: 8px;
+    width: 93%;
+}
+.world .world__item img{
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+   
+}
+.world__avatar{
+    position: relative;
+    overflow: hidden;
+}
+.world .world__item__sub{
+    position: absolute;
+    bottom: -227px;
+    margin: 0;
+    background: rgb(8 8 8 / 29%);
+    padding: 20px 0;
+    transition: .5s all;
+    -moz-transition: .5s all;
+    width: 100%;
+    text-align: center;
+}
+.world .world__item:hover .world__item__sub{
+    bottom: 0;
+
+}
+
+.world .world__item h5{
+    transition: .5s all;
+    font-weight: 600;
+}
+.world .world__item:hover img{
+    cursor: pointer;
+}
+.world .world__item:hover h5{
+    color:#ff6e65;
+    cursor: pointer;
+}
+.world .world__item__sub i{
+    background: #fff;
+    width: 28px;
+    height: 28px;
+    display: inline-block;
+    border-radius: 50%;
+    line-height: 28px;
+    margin-right: 5px;
+    color: #0d369f;
+}
+/* ============ CONTACT =================== */
+.contact{
+    margin-top: 100px;
+}
+.contact__right p{
+    text-align: left;
+    width: 600px;
+    margin-bottom: 30px;
+}
+.contact__right h3{
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 45px;
+    width: 610px;
+    margin-bottom: 15px;
+}
+.contact__right .btn{
+    background:#ff6e65 ;
+    color: #fff;
+    padding: 14px 30px;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 4px;
+    border: none;
+    transition: all .25s ease-in-out;
+}
+.contact__right .btn:hover{
+    background-color:#0d369f ;
+}
+
+/* =========Footer============== */
+.footer__head form{
+    display: flex;
+}
+.footer__head input{
+    background: transparent;
+    border: none;
+    padding: 15px 20px;
+    font-size: 16px;
+    color: #060606;
+    width: 100%;
+    border-radius: 8px 0px 0px 8px;
+    height: 55px;
+    border: 1px solid #eee;
+}
+.footer__head button{
+    background: #0d369f;
+    border: none;
+    color: #fff;
+    padding: 10px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 0 8px 8px 0;
+}
