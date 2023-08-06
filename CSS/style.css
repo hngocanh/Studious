@@ -17,6 +17,31 @@ html, body{
     line-height: 50px;
     font-weight: 600;
     position: relative;
+    margin-bottom: 30px;
+}
+
+.title__heading h2::before{
+    content: "";
+    background: #707070;
+    width: 60px;
+    height: 2px;
+    position: absolute;
+    right: 0;
+    margin: 0 auto;
+    left: -20px;
+    bottom: -8px;
+    display: block;
+}
+.title__heading h2::after{
+    content: "";
+    background: #707070;
+    width: 60px;
+    height: 2px;
+    position: absolute;
+    right: 0;
+    margin: 0 auto;
+    left: 20px;
+    bottom: -15px;
 }
 
 .title__heading span{
@@ -64,6 +89,7 @@ p{
 .header__top-content a:hover{
     color: #ff6e65;
 }
+
 
 .header__main .navbar-brand {
     font-size: 26px;
@@ -115,17 +141,98 @@ p{
     color: #ff6e65;
 }
 
-/* Features */
 
-/* .features .title__heading .title__main h3::before, .features .title__main h3::after {
-    content: " ";
-    background: grey;
-    width: 60px;
-    height: 2px;
+#navbarSupportedContent .search-right.HeaderSearch{
+    margin:  0 10px 0 10px;
+}
+
+#navbarSupportedContent .search-box{
+    display: flex;
+    align-items: center;
+}
+
+#navbarSupportedContent .search-box .input-search input{
+    font-size: 1rem;
+    color: black;
+    background: transparent;
+    padding: 10px 35px 10px 20px;
+    width: 100%;
+    border-radius: 30px;
+    border: 2px solid #eee;
+}
+
+#navbarSupportedContent .search-btn{
     position: absolute;
+    color: #0d369f;
     right: 0;
-    margin: 0 auto;
-} */
+    padding: 0 20px 0 20px;
+}
+
+input[type="search"]:focus {
+    outline: none;
+}
+
+
+/* Carousel */
+
+
+.studiousCarousel .carousel-inner .carousel-item .carousel-caption .btn{
+    padding: 14px 30px;
+    font-weight: 600;
+    font-size: 16px;
+    color: #060606;
+    border-radius: 4px;
+    background: #fff;
+    border: none;
+    margin-top: 40px;
+    transition: all .5s;
+
+}
+.studiousCarousel .carousel-inner .carousel-item .carousel-caption .btn:hover{
+    background-color: #ff6e65;
+    color: white;
+}
+
+.studiousCarousel .carousel-inner .carousel-item .carousel-caption i{
+    margin-left: 10px;
+}
+
+.studiousCarousel .carousel-inner .carousel-item .carousel-caption h1{
+    font-size: 70px;
+    font-weight: 700;
+    text-align: left;
+}
+
+.studiousCarousel .carousel-caption{
+    top: 25%;
+    left: 50%;
+    transform: translate(-85%,-10%);
+}
+
+.studiousCarousel .carousel-indicators{
+    position: absolute;
+    bottom: 120px;
+    background: none;
+    flex-direction: column;
+    top: 65%;
+    right: 50%;
+    transform: translateX(410%);
+}
+
+.studiousCarousel .carousel-indicators button{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.studiousCarousel .carousel-indicators .active{
+    background-color: #ff6e65;
+}
+
+
+
+/* Features */
 
 
 .features .features__item .features__image{
