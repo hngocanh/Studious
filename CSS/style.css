@@ -230,6 +230,56 @@ input[type="search"]:focus {
     background-color: #ff6e65;
 }
 
+/* Falcuties */
+
+#faculties{
+    position: relative;
+    margin-top: -4em;
+    margin-bottom: 3rem;
+    color: white;
+
+}
+
+#faculties .falcuty-box{
+    padding: 70px 55px;
+    position: relative;
+    z-index: 1;
+    border-radius: 8px;
+}
+
+#faculties .color-1{
+    background-color: #037ef3;
+}
+
+#faculties .color-2{
+    background-color: #ffc949;
+}
+
+#faculties .color-3{
+    background-color: #ff4f81;
+}
+
+#faculties .color-4{
+    background-color: #1ee697;
+}
+
+#faculties .falcuty__title{
+    color: white;
+    margin-top: 25px;
+    display: block;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+#faculties .falcuty-box i{
+    font-size: 45px;
+
+}
+
+div[class="falcuty-box color-2"] i[class="fa-solid fa-book"]{
+    transform: skewX(-10deg);
+}
+
 
 
 /* Features */

@@ -109,10 +109,7 @@
                 </li>
               </ul>
               <div class="search-right HeaderSearch">
-                <form
-                  class="search-box position-relative"
-                  role="search"
-                >
+                <form class="search-box position-relative" role="search">
                   <div class="input-search">
                     <input
                       type="search"
@@ -163,7 +160,7 @@
 
     <!-- Carousel -->
     <section class="studiousCarousel">
-      <div id="carouselStudious" class="carousel slide">
+      <div id="carouselStudious" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
           <button
             type="button"
@@ -178,7 +175,7 @@
           ></button>
         </div>
         <div class="carousel-inner">
-          <div class="carousel-item active">
+          <div class="carousel-item active" data-bs-interval="5000">
             <img src="./Img/banner2.jpg" class="d-block w-100" alt="banner2" />
             <div class="carousel-caption">
               <h1>
@@ -193,7 +190,7 @@
               </a>
             </div>
           </div>
-          <div class="carousel-item">
+          <div class="carousel-item" data-bs-interval="5000">
             <img src="./Img/banner3.jpg" class="d-block w-100" alt="banner3" />
             <div class="carousel-caption">
               <h1>
@@ -206,6 +203,47 @@
                   Know More <i class="fa-solid fa-arrow-right"></i>
                 </button>
               </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Faculties -->
+
+    <section class="falculties text-center" id="faculties">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-3">
+            <div class="falcuty-box color-1">
+              <i class="fa fa-cogs" aria-hidden="true"></i>
+              <h3>
+                <a href="#" class="falcuty__title">Engineering & Architecture</a>
+              </h3>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="falcuty-box color-2">
+              <i class="fa-solid fa-book"></i>
+              <h3>
+                <a href="#" class="falcuty__title">Learning Management</a>
+              </h3>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="falcuty-box color-3">
+              <i class="fa-solid fa-mug-saucer"></i>
+              <h3>
+                <a href="#" class="falcuty__title">Business & Management</a>
+              </h3>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="falcuty-box color-4">
+              <i class="fa-regular fa-hourglass-half"></i>
+              <h3>
+                <a href="#" class="falcuty__title">Artificial Intelligencet</a>
+              </h3>
             </div>
           </div>
         </div>
