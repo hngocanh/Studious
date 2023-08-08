@@ -559,6 +559,13 @@ div[class="falcuty-box color-2"] i[class="fa-solid fa-book"]{
 }
 
 /* =========Footer============== */
+.footer__sub{
+    padding: 80px 0;
+    background: #060e1f;
+}
+.footer__head{
+    z-index: 999 !important;
+}
 .footer__head form{
     display: flex;
 }
@@ -582,4 +589,40 @@ div[class="falcuty-box color-2"] i[class="fa-solid fa-book"]{
     cursor: pointer;
     font-weight: 600;
     border-radius: 0 8px 8px 0;
+}
+.footer__head__content{
+    padding: 50px;
+    max-width: 1000px;
+    margin: 0 auto;
+    border-radius: 10px;
+    background: white;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -60px;
+    box-shadow: 0px -1px 41px 0px rgb(21 22 23 / 8%);
+}
+.footer__head__content p{
+    text-align: left;
+}
+.footer__head__content h4{
+    font-size: 35px;
+    line-height: 40px;
+    color: black;
+    font-weight: 600;
+}
+.footer__head input:focus{
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(46, 202, 139, 0.25);
+}
+.footer__body{
+    margin-top: 120px;
+    color: white;
+}
+.footer__body ul{
+    list-style: none;
+    padding: 0;
+}
+.footer__body ul a{
+    text-align: left;
 }
