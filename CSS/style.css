@@ -798,3 +798,9 @@ footer{
         line-height: 40px;
     }
 }
+
+@include color-mode(dark) {
+    #btnfoot{
+        background-color: var(--bs-primary-bg-subtle);
+    }
+  }
