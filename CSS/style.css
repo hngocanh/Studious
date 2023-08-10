@@ -90,6 +90,20 @@ p{
     color: #ff6e65;
 }
 
+.header__main{
+    background-color: white;
+    padding: 0px;
+    transition: all 0.4s ease 0s;
+    height: 90px;
+    display: grid;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
 
 .header__main .navbar-brand {
     font-size: 26px;
@@ -173,6 +187,16 @@ input[type="search"]:focus {
 }
 
 
+.studiousCarousel .carousel-inner .carousel-item::before{
+    content: "";
+    background: linear-gradient(75deg, rgb(16 16 16 / 34%) 10%, rgb(230 2 100 / 0%));
+    position: absolute;
+    top: 0;
+    min-height: 100%;
+    left: 0;
+    right: 0;
+}
+
 /* Carousel */
 
 
@@ -186,6 +210,8 @@ input[type="search"]:focus {
     border: none;
     margin-top: 40px;
     transition: all .5s;
+    position: absolute;
+    left: 0;
 
 }
 .studiousCarousel .carousel-inner .carousel-item .carousel-caption .btn:hover{
