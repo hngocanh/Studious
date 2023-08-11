@@ -918,4 +918,31 @@ body.dark .footer__head__content{
     }
 }
 
+/* Back To Top */
+
+.backToTop {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.backToTop i{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    color: white;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-align: center;
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    background-color: #0d369f;
+
+}
+
+.cd-top--is-visible { 
+  visibility: visible;
+  opacity: 1;
+}
+
  
