@@ -36,7 +36,7 @@
 
     <link rel="stylesheet" href="./CSS/style.css" />
   </head>
-  <body style="height: 5000px">
+  <body>
     <!-- Top Header -->
     <section class="header__top">
       <div class="header__top">
@@ -76,16 +76,16 @@
             <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
               <ul class="navbar-nav mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#"
+                  <a class="nav-link active darkModeText" aria-current="page" href="#"
                     >HOME</a
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">ABOUT US</a>
+                  <a class="nav-link darkModeText" href="#">ABOUT US</a>
                 </li>
                 <li class="nav-item dropdown">
                   <a
-                    class="nav-link dropdown-toggle"
+                    class="nav-link dropdown-toggle darkModeText"
                     href="#"
                     role="button"
                     data-bs-toggle="dropdown"
@@ -105,13 +105,14 @@
                   </ul>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">CONTACT</a>
+                  <a class="nav-link darkModeText" href="#">CONTACT</a>
                 </li>
               </ul>
               <div class="search-right HeaderSearch">
                 <form class="search-box position-relative" role="search">
                   <div class="input-search">
                     <input
+                      id="darkModeBtn"
                       type="search"
                       name="s"
                       placeholder="Enter Keyword"
@@ -121,10 +122,14 @@
                       class="search-popup"
                     />
                   </div>
-                  <button type="submit" class="btn search-btn">
+                  <button type="submit" class="btn search-btn" id="darkModSearch">
                     <i class="fa fa-search" aria-hidden="true"></i>
                   </button>
                 </form>
+
+              </div>
+              <div id="darkMode">
+                <i class="fa-regular fa-moon"></i>
               </div>
               <!-- <form class="d-flex" role="search">
                 <div class="search__input">
@@ -168,7 +173,7 @@
             data-bs-slide-to="0"
             class="active"
           ></button>
-          <button
+          <button>
             type="button"
             data-bs-target="#carouselStudious"
             data-bs-slide-to="1"
@@ -207,8 +212,7 @@
           </div>
         </div>
       </div>
-    </section>
-
+    </section> 
     <!-- Faculties -->
 
     <section class="falculties text-center" id="faculties">
@@ -614,7 +618,7 @@
                   <div class="col-lg-6 col-md-12">
                     <form >
                       <input type="text" placeholder="Enter your emal">
-                      <button>Submit</button>
+                      <button>Send</button>
                     </form>
                   </div>
                 </div>
@@ -730,5 +734,6 @@
       integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
       crossorigin="anonymous"
     ></script>
+    <script src="./JS/darkMode.js"></script>
   </body>
 </html>
